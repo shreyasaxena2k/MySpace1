@@ -1,0 +1,79 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right,rgb(150, 150, 219),rgb(8, 66, 8));
+    background-image: url("../Pics/CalciD.jpg");
+    height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 93vh;
+    grid-template-columns: repeat(4,80px);
+    grid-template-rows: minmax(100px,auto) repeat(5,80px); 
+    
+}
+
+.calculator-grid > button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    background-color: rgba(225, 240, 245,.75);
+    outline: none;
+}
+
+.calculator-grid > button:hover{
+    background-color: rgba(225, 225, 225,.9);
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.output{
+    grid-column: 1/-1;
+    background: rgba(0,0,0,.75);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.previous-operand{
+    font-size: 1.5rem;
+    color: white;
+
+}
+.current-operand{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.btn a{
+    text-decoration: none;
+    color: black;
+    float:right ;
+    display: contents;
+    font-size: 0.9rem;
+    font-weight: bolder;
+  }
+.btn{
+    float: left;
+    margin-left: 50px;
+    width: 170px;
+    padding: 5px;
+    border-radius: 8px;
+}

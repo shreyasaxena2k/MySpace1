@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Media Recorder in Javascript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="tab"> 
+        <button id="start">Start camera</button>
+        <button id="record" disabled>Record</button>
+        <button id="play" disabled>Play</button>
+        <button id="download" disabled>Download</button>
+        Echo cancellation: <input type="checkbox" id="echoCancellation" />
+      </div>
+
+      <div class="videos">
+          <video id="gum" class="vid" playsinline autoplay muted style="width: 500px; height: 500px;"></video>
+          <video id="recorded" class="vid" playsinline loop style="width: 500px; height: 500px;"></video>
+      </div>
+
+      <div>
+        <span id="errorMsg"></span>
+      </div>
+
+      <button class="btn">
+        <a href="../Homepage/index.html">Back To Homepage</a>
+    </button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
+ 
+

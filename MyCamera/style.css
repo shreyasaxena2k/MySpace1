@@ -1,0 +1,62 @@
+body
+{
+  background-image: url("../Pics/CameraDp.jpg");
+  height: 100%;
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+button {
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 105px;
+    height: 30px;
+    margin-right:20px ;
+  }
+  
+ 
+  
+  p.borderBelow {
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+  }
+  
+  video {
+    margin-left: 10%;
+    vertical-align: top;
+    --width: 25vw;
+    width: var(--width);
+    height: calc(var(--width) * 0.5625);
+    width: 500px;
+    height: 500px;
+  }
+  
+  video:last-of-type {
+    margin: 0 0 20px 0;
+  }
+  
+  video#gumVideo {
+    margin: 0 20px 20px 0;
+  }
+  .tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin-left: 10%;
+  }
+
+  .btn a{
+    text-decoration: none;
+    color: black;
+    float:right ;
+    display: contents;
+    font-size: 0.9rem;
+    font-weight: bolder;
+  }
+.btn{
+    float: right;
+    margin-right: 50px;
+    width: 170px;
+    border-radius: 8px;
+}
